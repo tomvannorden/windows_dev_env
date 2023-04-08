@@ -12,10 +12,16 @@ Configuration install_win_packages
         }
         cChocoPackageInstaller install_ubuntu2204
         {
-            Name                 = 'choco install wsl-ubuntu-2204'
+            Name                 = 'wsl-ubuntu-2204'
             Ensure               = 'Present'
             AutoUpgrade          = $True
             DependsOn            = "[cChocoPackageInstaller]install_wsl"
+        }
+        cChocoPackageInstaller install_vscode
+        {
+            Name                 = 'vscode'
+            Ensure               = 'Present'
+            AutoUpgrade          = $True
         }
     }
 }
