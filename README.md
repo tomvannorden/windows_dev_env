@@ -13,3 +13,7 @@ Repository that contains my infra as code to manage my Windows development envir
 3. Check the installed DSC command modules
   - Open up a powershell cli and type "Get-Command -Module PSDesiredStateConfiguration
   - It should show the DSC commands available. If not present make sure the correct version of powershell is installed.
+
+4. Make sure git is installed
+  - Open up a powershell cli and type "git --version".
+  - If the output does not show a version, download git for windows from its website.
