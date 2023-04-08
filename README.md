@@ -17,3 +17,11 @@ Repository that contains my infra as code to manage my Windows development envir
 4. Make sure git is installed
   - Open up a powershell cli and type "git --version".
   - If the output does not show a version, download git for windows from its website.
+
+5. Clone this repository in your local directory.
+
+6. Open up a powershell cli and execute "initial_install.ps1". 
+
+7. Open up a powershell cli and execute your first ps dsc configuration: "install_choco.ps1".
+
+# Usage
