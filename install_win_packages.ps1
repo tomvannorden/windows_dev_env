@@ -23,6 +23,37 @@ Configuration install_win_packages
             Ensure               = 'Present'
             AutoUpgrade          = $True
         }
+        cChocoPackageInstaller install_pinginfoview
+        {
+            Name                 = 'pinginfoview'
+            Ensure               = 'Present'
+            AutoUpgrade          = $True
+        }
+        cChocoPackageInstaller install_winscp
+        {
+            Name                 = 'winscp'
+            Ensure               = 'Present'
+            AutoUpgrade          = $True
+        }
+        cChocoPackageInstaller install_windows_terminal
+        {
+            Name                 = 'microsoft-windows-terminal'
+            Ensure               = 'Present'
+            AutoUpgrade          = $True
+        }
+        cChocoPackageInstaller install_mobaxterm
+        {
+            Name                 = 'mobaxterm'
+            Ensure               = 'Present'
+            AutoUpgrade          = $True
+        }
+        cChocoPackageInstaller install_tightvnc
+        {
+            Name                 = 'tightvnc'
+            Ensure               = 'Present'
+            AutoUpgrade          = $True
+        }
+        cChocoPackageInstaller install_go
     }
 }
 
