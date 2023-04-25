@@ -3,12 +3,12 @@ Configuration copy_go_path
 {
     Node "localhost"
     {
-        File copy_go_path
+        Environment copy_go_path
         {
-            DestinationPath = "C:\Users\tvannor\Go"
-			SourcePath = "C:\Program Files\Go"
-			Type = "Directory"
-			Recurse = $true
+            Name = "go"
+			Value = "C:\Program Files\Go\bin\"
+			Path = $true
+			Ensure = "Present"
         }
     }
 }

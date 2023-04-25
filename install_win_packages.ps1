@@ -53,7 +53,19 @@ Configuration install_win_packages
             Ensure               = 'Present'
             AutoUpgrade          = $True
         }
-        cChocoPackageInstaller install_go
+        cChocoPackageInstaller install_tigervnc
+		# older version to connect to thinclient
+		{
+            Name                 = 'tigervnc'
+            Ensure               = 'Present'
+            AutoUpgrade          = $False
+        }
+        cChocoPackageInstaller install_nmap
+		{
+            Name                 = 'nmap'
+            Ensure               = 'Present'
+            AutoUpgrade          = $True
+        }
     }
 }
 

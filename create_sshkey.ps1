@@ -22,12 +22,12 @@ Start-DscConfiguration -Path $config.psparentpath -Wait -Verbose -Force
 
 #################################################################################
 
-$file = "C:\Users\$env:UserName\.ssh\id_rsa_$env:UserName"
+$file = "C:\Users\$env:UserName\.ssh\id_rsa"
 
 #If the file does not exist, create it.
 if (-not(Test-Path -Path $file -PathType Leaf)) {
      try {
-         ssh-keygen -t rsa -f $file -P """"
+         ssh-keygen -f $file -P """"
          Write-Host "A new ssh key is created"
      }
      catch {
